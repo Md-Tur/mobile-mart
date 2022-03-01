@@ -56,6 +56,12 @@ const displayPhoneDetails = phoneId => {
                     <h5 class="card-text">ChipSet: ${phoneId.mainFeatures.chipSet}</h5>
                     <h5 class="card-text">Memory: ${phoneId.mainFeatures.memory}</h5>
                     <h5 class="card-text">Sensors: ${phoneId.mainFeatures.sensors ? phoneId.mainFeatures.sensors : "No Sensors"}</h5>
+                    <h5 class="card-text">WLAN: ${phoneId.others.WLAN}</h5>
+                    <h5 class="card-text">Bluetooth: ${phoneId.others.Bluetooth}</h5>
+                    <h5 class="card-text">GPS: ${phoneId.others.GPS}</h5>
+                    <h5 class="card-text">NFC: ${phoneId.others.NFC}</h5>
+                    <h5 class="card-text">Radio: ${phoneId.others.Radio}</h5>
+                    <h5 class="card-text">USB: ${phoneId.others.USB}</h5>
                     <h5 class="card-text">Brand Name: ${phoneId.brand}</h5>
                 </div>
         </div>
