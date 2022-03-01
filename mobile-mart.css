@@ -1,7 +1,14 @@
-#style{
-    background-color: gainsboro;
+section{
+    padding: 0;
+    margin: 0;
 }
 
-#mart-style{
+#heading-style{
     color:darkgreen;
+}
+
+#details-button{
+    width: 35%;
+    border-radius: 10px;
+    background-color: lightsteelblue;
 }
