@@ -1,12 +1,18 @@
+/* full body part */
+
 #style{
     background-color: cornsilk;
     padding: 0;
     margin: 0;
 }
 
+/* heading part */
+
 #heading-style{
     color:darkgreen;
 }
+
+/* details button part */
 
 #details-button{
     width: 35%;
