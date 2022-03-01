@@ -60,20 +60,20 @@ const displayPhoneDetails = phoneId => {
         <div class="card h-100">
                 <img src="${phoneId.image}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Model: ${phoneId.name}</h5>
-                    <h5 class="card-title">Release Date: ${phoneId.releaseDate ? phoneId.releaseDate : "Not Available"}</h5>
-                    <h5 class="card-text">Storage: ${phoneId.mainFeatures.storage}</h5>
-                    <h5 class="card-text">Display Size: ${phoneId.mainFeatures.displaySize}</h5>
-                    <h5 class="card-text">ChipSet: ${phoneId.mainFeatures.chipSet}</h5>
-                    <h5 class="card-text">Memory: ${phoneId.mainFeatures.memory}</h5>
-                    <h5 class="card-text">Sensors: ${phoneId.mainFeatures.sensors ? phoneId.mainFeatures.sensors : "No Sensors"}</h5>
-                    <h5 class="card-text">WLAN: ${phoneId.others.WLAN}</h5>
-                    <h5 class="card-text">Bluetooth: ${phoneId.others.Bluetooth}</h5>
-                    <h5 class="card-text">GPS: ${phoneId.others.GPS}</h5>
-                    <h5 class="card-text">NFC: ${phoneId.others.NFC}</h5>
-                    <h5 class="card-text">Radio: ${phoneId.others.Radio}</h5>
-                    <h5 class="card-text">USB: ${phoneId.others.USB}</h5>
-                    <h5 class="card-text">Brand Name: ${phoneId.brand}</h5>
+                    <h4 class="card-title"><span class = 'fw-bold'>Model: </span>${phoneId.name}</h4>
+                    <h5 class="card-title"><span class = 'fw-bold'>Release Date: </span>${phoneId.releaseDate ? phoneId.releaseDate : "Not Available"} </h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Storage: </span>${phoneId.mainFeatures.storage}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Display Size: </span>${phoneId.mainFeatures.displaySize}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>ChipSet: </span>${phoneId.mainFeatures.chipSet}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Memory: </span>${phoneId.mainFeatures.memory}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Sensors: </span>${phoneId.mainFeatures.sensors ? phoneId.mainFeatures.sensors : "No Sensors"}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>WLAN: </span>${phoneId.others.WLAN}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Bluetooth: </span>${phoneId.others.Bluetooth}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>GPS: </span>${phoneId.others.GPS}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>NFC: </span>${phoneId.others.NFC}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Radio: </span>${phoneId.others.Radio}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>USB: </span>${phoneId.others.USB}</h5>
+                    <h5 class="card-text"><span class = 'fw-bold'>Brand Name: </span>${phoneId.brand}</h5>
                 </div>
         </div>
         `;
