@@ -15,19 +15,20 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="style">
 
     <section class="container">
+
         <h1 class="text-center mt-3">Welcome to <span id="heading-style">Mobile Mart</span></h1>
         <!-- Phone search field -->
 
-        <div class="input-group mb-3 container w-50 mx-auto">
+        <div class="input-group mb-3 container w-50 mx-auto mb-5">
             <input id="search-phone" type="text" class="form-control me-3 rounded-3"
                 placeholder="Search Your Phone Here" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button id="search-button" class="btn btn-outline-secondary rounded-3" type="button">Search</button>
         </div>
 
-        <!-- card details display area -->
+        <!-- phone details display area -->
 
         <div id="display-details" class="row row-cols-1 row-cols-md-3 g-4">
 
@@ -38,10 +39,8 @@
         <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
 
         </div>
+
     </section>
-
-
-
 
     <!-- js linked -->
     <script src="js/mobile-mart.js"></script>

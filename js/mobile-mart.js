@@ -12,7 +12,8 @@ document.getElementById('search-button').addEventListener('click', () => {
 
 const displayPhone = data => {
     const searchResult = document.getElementById('search-result');
-    data.forEach(element => {
+    searchResult.textContent = "";
+    data.slice(0, 20).forEach(element => {
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
@@ -41,22 +42,23 @@ const showPhoneDetails = phoneId => {
 
 const displayPhoneDetails = phoneId => {
     const phoneDetails = document.getElementById('display-details');
-    const div = document.createElement('div');
+    phoneDetails.textContent = '';
+    let div = document.createElement('div');
     div.classList.add('col');
     div.innerHTML = `
         <div class="card h-100">
                 <img src="${phoneId.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Model: ${phoneId.name}</h5>
-                    <h5 class="card-title">Release Date: ${phoneId.releaseDate ? phoneId.releaseDate : "not available"}</h5>
+                    <h5 class="card-title">Release Date: ${phoneId.releaseDate ? phoneId.releaseDate : "Not Available"}</h5>
                     <h5 class="card-text">Storage: ${phoneId.mainFeatures.storage}</h5>
                     <h5 class="card-text">Display Size: ${phoneId.mainFeatures.displaySize}</h5>
                     <h5 class="card-text">ChipSet: ${phoneId.mainFeatures.chipSet}</h5>
                     <h5 class="card-text">Memory: ${phoneId.mainFeatures.memory}</h5>
+                    <h5 class="card-text">Sensors: ${phoneId.mainFeatures.sensors ? phoneId.mainFeatures.sensors : "No Sensors"}</h5>
                     <h5 class="card-text">Brand Name: ${phoneId.brand}</h5>
                 </div>
         </div>
         `;
-
     phoneDetails.appendChild(div);
 }
